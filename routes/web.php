@@ -17,3 +17,4 @@ Route::get('/', function () {
 Route::get('/video','Test\TestController@oss1');
 Route::get('/video2','Test\TestController@oss2');
 Route::get('/oss','Test\TestController@saveToOss');
+Route::get('/mp','video\IndexController@mp');
