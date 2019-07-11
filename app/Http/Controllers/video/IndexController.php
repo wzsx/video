@@ -11,11 +11,11 @@ class IndexController extends Controller
     public function mp(){
         $id=$_GET['id'];
         echo 'video:'.$id;echo'</br>';
-        $rs=VideoModel::where(['vid'=>$id])->first()->toArray() ;
+        $rs=VideoModel::where(['vid'=>$id])->first()->toArray();
         echo '<pre>';print_r($rs);echo '</pre>';
         $data=[
             'v'=>$rs
         ];
-        return view('video.title'.$data);
+        return view('video.title',$data);
     }
 }

@@ -9,7 +9,7 @@
 </head>
 <body>
     <div style="border: 1px solid grey">
-        <video src="{{env['CDN_HOST']}}}/{{$rs['path']}}" controls="controls"></video>
+        <video src="{{env('CDN_HOST')}}/{{$v['path']}}" controls="controls"></video>
     </div>
 </body>
 </html>
