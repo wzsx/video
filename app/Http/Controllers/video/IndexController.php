@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Model\VideoModel;
 class IndexController extends Controller
 {
-    //
+    //展示
     public function mp(){
         $id=$_GET['id'];
         echo 'video:'.$id;echo'</br>';
