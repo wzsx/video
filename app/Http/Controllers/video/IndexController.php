@@ -18,4 +18,7 @@ class IndexController extends Controller
         ];
         return view('video.title',$data);
     }
+    public function cc(){
+        return view('video.titles');
+    }
 }
